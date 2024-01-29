@@ -1,1 +1,37 @@
 
+//vaibhav khandelwal//
+public class  Employee{
+int employeeId;
+int salary;
+String dept;
+Employee()
+{
+employeeId=101;
+salary=3000;
+dept="testing";
+}
+public static void main(String[] args)
+{
+Employee harsha=new Employee();
+System.out.println(harsha.employeeId+"salary"+harsha.salary+"Dept"+harsha.dept);
+}
+}
+==========================================================
+public class  Employee{
+int employeeId;
+int salary;
+String dept;
+Employee(int empId,int sal,String d)
+{
+employeeId=empId;
+salary=sal;
+dept=d;
+}
+public static void main(String[] args)
+{
+Employee harsha=new Employee(101,3000,"testing");
+Employee varsha=new Employee(102,5000,"engineering");
+System.out.println(harsha.employeeId+"salary"+harsha.salary+"Dept"+harsha.dept);
+System.out.println(varsha.employeeId+"salary"+varsha.salary+"Dept"+varsha.dept);
+}
+}
