@@ -1,1 +1,147 @@
 
+//vaibhav khandelwal//
+import java.util.*;
+public class Test
+{
+public static void main(String[] args)
+{
+Scanner sc=new Scanner(System.in);
+Random rnd = new Random();
+int c=rnd.nextInt(20);
+System.out.println("Computer guess:"+c);
+for(int i=0;i<6;i++)
+{
+System.out.println("guess the number b/w 0 and 20");
+int user=sc.nextInt();
+if(user<c)
+{
+System.out.println("Your guess is too high");
+}
+else if(user>c)
+{
+System.out.println("your guess is too low");
+}
+else
+{
+System.out.println("gotcha! you guessed it right");
+break;
+}
+}
+}
+}
+
+
+===========================================================================
+
+
+public class Test2
+{
+public static void main(String[] args)
+{
+char ch='A';
+while(ch<=90)
+{
+System.out.println(ch+" ");
+ch++;
+}
+ch ch1='A';
+do{
+System.out.println(ch+" ");
+ch++;
+}while(ch<='Z');
+}
+}
+
+
+===========================================================================
+
+
+
+
+public class Test3
+{
+public static void main(String[] args)
+{
+Scanner sc=new Scanner(System.in);
+System.out.println("enter your division");
+int div=sc.nextInt();
+switch(div)
+{
+case 1:
+System.out.println("First Rank");
+break;
+case 2:
+System.out.println("second Rank");
+break;
+case 3:
+System.out.println("third Rank");
+break;
+default:
+System.out.println("No rank");
+break;
+
+}
+}
+}
+
+
+=================================================================================
+
+
+public class Test2
+{
+public static void main(String[] args)
+{
+Scanner sc=new Scanner(System.in);
+System.out.pritln("Howlong is your burp?");
+int burp=sc.nextInt();
+
+String msg="";
+for(int i=1;i<=burplength;i++)
+{
+msg=msg+"r";
+}
+System.out.println("Bu"+msg+"p");
+}
+}
+
+================================================================================
+public class lecture5 {
+    public static void main(String[] args) {
+    Amazon customer = new Amazon();
+    float payableAmount=customer.Transaction(1500);
+        System.out.println("Total Payable: "+payableAmount);
+
+        /*
+        public String iAmAccessibleEverywhere
+        private String iAmAccessibleOnlyhere
+        protected String iAmAccessibleToDerivedClasses
+        String iAmAccessibleToAllClassInSamePackage
+         */
+    }
+}
+class Gpay{
+    private float txnCharge=0.05f;
+
+    public void setTxnCharge(float newCharge){
+        txnCharge=newCharge;
+        if (newCharge<=5){
+            System.out.println("Invalid TxtCharge");
+            return;
+        }
+    }
+    public float getTxnCharge(){
+        return txnCharge;
+    }
+}
+class Amazon{
+
+    float Transaction(float amt) {
+        Gpay gpayobject = new Gpay();
+
+        gpayobject.setTxnCharge(0.07f);
+
+        float totalAmount=amt+ (amt* gpayobject.getTxnCharge());
+        return totalAmount;
+    }
+}
