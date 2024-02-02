@@ -1,1 +1,160 @@
 
+//vaibhav khandelwal//
+abstract class Doctor
+{
+    abstract void treatPatient();
+}
+ class Physician extends Doctor{
+    @Override
+    void treatPatient() {
+        System.out.println("Physician treat patient");
+    }
+ }
+
+ class Surgeon extends Doctor{
+    @Override
+    void treatPatient() {
+        System.out.println("Surgeon treat patient");
+    }
+ }
+
+ class Dentist extends Doctor{
+    @Override
+    void treatPatient() {
+        System.out.println("Dentist treat patient");
+    }
+ }
+
+ public class Program
+ {
+    public static void main(String[] args)
+    {
+        System.out.println("Hi my name is lucky");
+        System.out.println("who is their");
+        System.out.println("Press any key press to continue");
+
+        int choice=new java.util.Scanner(System.in).nextInt();
+
+        Doctor doc=null;
+        switch(choice)
+        {
+            case 1:
+                doc=new Physician();
+                break;
+            case 2:
+                doc=new Surgeon();
+                break;
+            case 3:
+                doc=new Dentist();
+                break;
+
+            default:
+            System.out.println("Invalid choice");
+            break;
+        }
+        if (choice<0 || choice>3) {
+            System.exit(0);
+            
+        }
+        else{
+            doc.treatPatient();
+        }
+    }
+ }
+===================================================================
+
+class Student {
+    private String standard;
+    private int rollno;
+    private char section;
+
+    // Getter methods
+    public String getStandard() {
+        return standard;
+    }
+
+    public int getRollno() {
+        return rollno;
+    }
+
+    public char getSection() {
+        return section;
+    }
+
+    // Setter methods
+    public void setStandard(String standard) {
+        this.standard = standard;
+    }
+
+    public void setRollno(int rollno) {
+        this.rollno = rollno;
+    }
+
+    public void setSection(char section) {
+        this.section = section;
+    }
+
+    // Display method
+    public void displayInfo() {
+        System.out.println("Standard: " + standard);
+        System.out.println("Roll No: " + rollno);
+        System.out.println("Section: " + section);
+    }
+}
+
+class HighSchoolStudent extends Student {
+    private String schoolName;
+
+    // Additional setter method for schoolName
+    public void setSchoolName(String schoolName) {
+        this.schoolName = schoolName;
+    }
+
+    // Additional display method overriding the superclass method
+    @Override
+    public void displayInfo() {
+        super.displayInfo();
+        System.out.println("School Name: " + schoolName);
+    }
+}
+
+class CollegeStudent extends Student {
+    private String collegeName;
+
+    // Additional setter method for collegeName
+    public void setCollegeName(String collegeName) {
+        this.collegeName = collegeName;
+    }
+
+    // Additional display method overriding the superclass method
+    @Override
+    public void displayInfo() {
+        super.displayInfo();
+        System.out.println("College Name: " + collegeName);
+    }
+}
+
+public class PolymorphismExample {
+    public static void main(String[] args) {
+        HighSchoolStudent highSchoolStudent = new HighSchoolStudent();
+        highSchoolStudent.setStandard("10th");
+        highSchoolStudent.setRollno(101);
+        highSchoolStudent.setSection('A');
+        highSchoolStudent.setSchoolName("High School XYZ");
+
+        CollegeStudent collegeStudent = new CollegeStudent();
+        collegeStudent.setStandard("Undergraduate");
+        collegeStudent.setRollno(201);
+        collegeStudent.setSection('B');
+        collegeStudent.setCollegeName("ABC College");
+
+        // Polymorphism: Using the common type (Student) for different subclasses
+        Student student1 = highSchoolStudent;
+        Student student2 = collegeStudent;
+
+        // Calling displayInfo method will invoke the appropriate overridden method
+        student1.displayInfo();
+        System.out.println("---------------------");
+        student2.displayInfo();
+    }
+}
