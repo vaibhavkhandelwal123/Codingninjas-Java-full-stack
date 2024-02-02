@@ -1,1 +1,50 @@
+//vaibahv khandelwal
+
+import java.util.*;
+public class Test2{
+    int n1,n2,result;
+    Scanner sc=new Scanner(System.in);
+    void calculator()
+    {
+        System.out.println("ENter the first number");
+        n1=sc.nextInt();
+
+        System.out.println("ENter the first number");
+        n1=sc.nextInt();
+
+        result=n1/n2;
+
+        System.out.println("the division is"+result);
+    }
+    public static void main(String[] args) {
+        Test2 test1=new Test2();
+        test1.calculator();
+    }
+}
+==========================================================
+
+import java.util.*;
+class Test2{
+    int n1,n2,result;
+    Scanner sc=new Scanner(System.in);
+    void calculator()
+    {
+        try{
+        System.out.println("ENter the first number");
+        n1=sc.nextInt();
+
+        System.out.println("ENter the first number");
+        n1=sc.nextInt();
+
+        result=n1/n2;
+        }catch(Exception e){
+            System.out.println("ouch");
+        }
+        System.out.println("the division is"+result);
+}
+    public static void main(String[] args) {
+        Test2 test1=new Test2();
+        test1.calculator();
+    }
+}
 
