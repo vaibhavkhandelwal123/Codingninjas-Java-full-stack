@@ -1,1 +1,107 @@
+//vaibhav khandelwal
+
+import java.util.*;
+class Test2{
+    int n1,n2,result;
+    Scanner sc=new Scanner(System.in);
+    void calculator()
+    {
+        try{
+        System.out.println("ENter the first number");
+        n1=sc.nextInt();
+
+        System.out.println("ENter the first number");
+        n1=sc.nextInt();
+
+        result=n1/n2;
+        }
+        catch(InputMismatchException ine)
+        {
+            System.out.println("Ime detected");
+        }
+        catch(ArithmeticException ae)
+        {
+            System.out.println("Ae detected");
+        }
+        catch(Exception e){
+            System.out.println("ouch"+e.getMessage());
+            e.printStackTrace();
+        }
+        System.out.println("the division is"+result);
+}
+    public static void main(String[] args) {
+        Test2 test1=new Test2();
+        test1.calculator();
+    }
+}
+
+===============================================================================
+
+import java.util.*;
+class Test3{
+    int getNextNo(int n)
+    {
+        try {
+            if(n==5)
+            {
+                return n+1;
+            }
+        }
+        finally{
+            System.out.println("this is important");
+        }
+        return n-1;
+    }
+    public static void main(String[] args) {
+        Test3 test = new Test3();
+        System.out.println(test.getNextNo(5));
+    }
+}
+
+===================================================================================
+
+import java.util.*;
+class Test3{
+    int n1,n2,result;
+    Scanner sc=new Scanner(System.in);
+    void calculator()
+    {
+        try{
+        System.out.println("ENter the first number");
+        n1=sc.nextInt();
+
+        System.out.println("ENter the first number");
+        n1=sc.nextInt();
+
+        if(n2==0)
+        {
+            throw new ArithmeticException();
+        }
+        
+        result=n1/n2;
+        
+        }
+        catch(InputMismatchException ine)
+        {
+            System.out.println("Ime detected");
+        }
+        catch(ArithmeticException ae)
+        {
+            System.out.println("Ae detected");
+        }
+        catch(Exception e){
+            System.out.println("ouch"+e.getMessage());
+            e.printStackTrace();
+        }
+        finally{
+        System.out.println("the division is"+result);
+}
+}
+    public static void main(String[] args) {
+        Test2 test1=new Test2();
+        test1.calculator();
+    }
+}
+=================================================================================
+
 
