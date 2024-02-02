@@ -1,1 +1,55 @@
 
+//vaibhav khandelwal
+
+public class Test1{
+    int arg=5;
+    void test(int arg)
+    {
+        arg=arg;
+    }
+    public static void main(String[] args) {
+        int arg=10;
+        Test1 obj=new Test1();
+        obj.test(arg);
+        System.out.println(obj.arg);
+    }
+}
+=============================================
+public class Test1{
+    int arg=5;
+    void test(int arg)
+    {
+       this.arg=arg;
+    }
+    public static void main(String[] args) {
+        int arg=10;
+        Test1 obj=new Test1();
+        obj.test(arg);
+        System.out.println(obj.arg);
+    }
+}
+===============================================
+class App
+{
+    App()
+    {
+         System.out.println("Constructing App");
+    }
+    App(int num)
+    {
+        System.out.println(num);
+    }
+}
+
+
+public class Test2 extends App{
+    Test2()
+    {
+        super(20);
+        System.out.println("Constructing Test2");
+    }
+    public static void main(String[] args) {
+        new Test2();
+    }
+}
+=================================================
