@@ -1,1 +1,44 @@
 
+//vaibhav khandelwal
+
+import java.util.*;
+class Test4
+{
+    public static void main(String[] args){
+        ArrayList<String> list2 = new ArrayList<>();
+        list2.add("banana");
+        list2.add("mango");
+        list2.add("orange");
+
+        System.out.println(list2);
+
+        String s=list2.get(2);
+        System.out.println(s);
+
+        System.out.println(list2.size());
+
+        // for(int i=0; i<list2.size(); i++)
+        // {
+        //     System.out.println(list2.get(i));
+        // }
+
+        list2.set(2, "mmmmm");
+        System.out.println(list2);
+
+        list2.remove(2);
+        System.out.println(list2);
+
+        list2.sort(Comparator.naturalOrder());
+        System.out.println(list2);
+
+        System.out.println(list2.contains("mango"));
+
+        System.out.println(list2.isEmpty());
+        list2.removeAll(list2);
+
+        System.out.println(list2.isEmpty());
+    }
+}
+
+=========================================================================
+
