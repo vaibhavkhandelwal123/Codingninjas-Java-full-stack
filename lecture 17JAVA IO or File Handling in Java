@@ -1,0 +1,53 @@
+import java.util.*;
+import java.io.*;
+public class extra{
+    public static void main(String[] args) {
+        File file = new File("d://new.txt");
+        try{
+            file.createNewFile();
+        }catch(IOException e)
+        {
+            e.printStackTrace();
+        }
+        System.out.println("file created successfully");
+    }
+}
+
+==================================================================================
+
+
+import java.util.*;
+import java.io.*;
+public class extra{
+    public static void main(String[] args) {
+        File file = new File("d://new.txt");
+        if(file.exists())
+        {
+            System.out.println("printing file details");
+            System.out.println("file size"+file.length());
+            System.out.println("File name"+file.getName());
+            System.out.println("File path"+file.getAbsolutePath());
+            System.out.println("is file is readable"+file.canRead());
+            System.out.println("is file is readable"+file.canWrite());
+            
+        }
+    }
+}
+
+
+=========================================================================================
+
+
+import java.util.*;
+import java.io.*;
+public class extra{
+    public static void main(String[] args) {
+        File file = new FileWriter("d://new.txt");
+        file.write("i am ready");
+        file.write("yeaahhh");
+
+        fw.flush();
+        fw.close();
+        
+    }
+}
