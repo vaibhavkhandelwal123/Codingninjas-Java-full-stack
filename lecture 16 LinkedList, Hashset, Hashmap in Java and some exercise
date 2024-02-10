@@ -1,0 +1,158 @@
+import java.util.*;
+public class extra{
+    public static void main(String[] args) {
+        LinkedList ml=new LinkedList<>();
+        ml.add(1);
+        ml.add(2);
+        ml.add(3);
+
+        System.out.println(ml.get(1));
+        Iterator it=ml.iterator();
+        while (it.hasNext()) {
+            it.remove();
+            System.out.println(it.next());
+        }
+    }
+}
+
+
+===================================================================================
+
+
+import java.util.*;
+public class extra{
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+         ArrayList<String> list = new ArrayList<String>();
+         for(int i = 0; i <=5;i++)
+         {
+            String item=sc.next();
+            if (list.contains(item)) {
+                continue;
+            }
+            list.add(item);
+         }
+         System.out.println(list);
+
+        }
+    }
+
+
+
+==========================================================================
+
+
+
+import java.util.*;
+public class extra{
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+         HashSet set = new HashSet();
+         set.add("red");
+         set.add("orange");
+         set.add("red");
+         set.add("blue");
+         set.add("green");
+
+         System.out.println(set);
+
+        }
+    }
+
+
+
+
+==============================================================================
+
+
+
+import java.util.*;
+public class extra{
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+         HashSet set = new HashSet();
+         set.add("red");
+         set.add("orange");
+         set.add("red");
+         set.add("blue");
+         set.add("green");
+
+         System.out.println(set);
+
+
+         LinkedHashSet link=new LinkedHashSet<>();
+         link.add("red");
+         link.add("orange");
+         link.add("red");
+         link.add("blue");
+         link.add("green");
+         System.out.println(link);
+        }
+    }
+
+
+=============================================================================
+
+
+import java.util.*;
+public class extra{
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+         HashSet set = new HashSet();
+         set.add("red");
+         set.add("orange");
+         set.add("red");
+         set.add("blue");
+         set.add("green");
+
+         System.out.println(set);
+
+
+         LinkedHashSet link=new LinkedHashSet<>();
+         link.add("red");
+         link.add("orange");
+         link.add("red");
+         link.add("blue");
+         link.add("green");
+         System.out.println(link);
+        
+
+        TreeSet tr =new TreeSet();
+        tr.add("red");
+        tr.add("orange");
+        System.out.println(tr);
+    }
+}
+
+
+
+=================================================================================
+
+
+import java.util.*;
+public class extra{
+    public static void main(String[] args) {
+        HashMap map = new HashMap();
+        map.put("australia", 2);
+        map.put("india", 1);
+        map.put("usa", 3);
+        map.put("china", 4);
+        map.put("japan", 5);
+
+        System.out.println(map);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
