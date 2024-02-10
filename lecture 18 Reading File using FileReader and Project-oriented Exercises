@@ -1,0 +1,45 @@
+import java.util.*;
+import java.io.*;
+public class extra{
+    public static void main(String[] args) {
+        FileReader f=new FileReader("C:\\Users\\khand\\OneDrive\\Desktop\\doubt.txt");
+        BufferedReader br=new BufferedReader(f);
+        String line=br.readLine();
+        System.out.println(line);
+    }
+}
+
+
+========================================================================================================
+
+
+import java.util.*;
+import java.io.*;
+public class extra{
+    public static void main(String[] args) {
+        FileReader f=new FileReader("C:\\Users\\khand\\OneDrive\\Desktop\\doubt.txt");
+        BufferedReader br=new BufferedReader(f);
+        String line=br.readLine();
+        System.out.println(line);
+
+        ArrayList<String> lines=new ArrayList<String>();
+        while(line=br.readLine()!=null)
+        {
+            pokemons.add(line);
+            
+        }
+        Scanner sc=new Scanner(System.in);
+        String type=sc.nextLine();
+        HashSet ptypes=new LinkedHashSet<>();
+        if(!ptypes.contains(type))
+        {
+            System.out.println("invalid");
+            return;
+        }
+        for(int i=0; i<ptypes.size(); i++)
+        {
+            String ptype=ptypes.get(i);
+            
+        }
+    }
+}
