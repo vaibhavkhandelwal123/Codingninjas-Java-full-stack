@@ -1,0 +1,4 @@
+create database new;
+use new;
+create table customers(customer_number int primary key, first name varchar(255));
+select * from customers;
