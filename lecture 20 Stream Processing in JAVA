@@ -1,0 +1,76 @@
+import java.util.*;
+import java.io.*;
+public class extra{
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<String>();
+        list.add("Hello");
+        list.add("BYE");
+        list.add("World");
+
+        list.forEach(System.out.println);
+
+        for(String s : list) {
+            change(s);
+        }
+        change(list.get(0));
+        change(list.get(1));
+        change(list.get(2));
+    }
+    
+}
+
+
+================================================================================
+
+import java.util.*;
+import java.io.*;
+class program{
+       static void Converter(int args)
+       {
+        System.out.println(Math.abs(arg));
+       }
+       void doAction(){
+        List<String> numbers = new ArrayList<String>();
+        numbers.forEach(program::Converter);
+       }
+}
+
+class extra{
+    public static void main(String[] args) {
+        program obj = new program();
+        obj.doAction();
+    }
+}
+
+
+======================================================================================
+
+
+
+import java.util.*;
+import java.lang.*;
+import java.util.stream.Collector;
+import java.io.*;
+public class extra{
+     public static void main(String[] args) {
+        List<Integer> list = Arrays.asList(1,2,3,4,5,6,7);
+        List<Integer> result= list.stream().map(e -> e*e).collect(Collectors.toList());
+        System.out.println(result);
+
+     }
+}
+
+======================================================================================
+
+import java.util.*;
+import java.lang.*;
+import java.util.stream.Collector;
+import java.util.stream.Collectors;
+import java.io.*;
+public class extra{
+     public static void main(String[] args) {
+        List<Integer> list = Array.asList(12,12,34,-43);
+     List<Integer> result = list.stream().filter(e->e<0).collect(Collectors.toList());
+     System.out.println(result);
+     }
+}
